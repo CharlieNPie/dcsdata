@@ -33,7 +33,7 @@ Terminal Output:
 
 **Requirements:**
 
-- Python 3.6 or higher
+- Python 3.6 or higher (may require 64-bit version in some cases)
 - pip package manager 
 - Microsoft Visual C++ Build Tools : https://visualstudio.microsoft.com/downloads/
 - MySQL Server 8.0
