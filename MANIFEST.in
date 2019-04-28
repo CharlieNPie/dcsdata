@@ -1,0 +1,8 @@
+include dcsscrapers/data/academic/*
+include dcsscrapers/data/modules/level1/*
+include dcsscrapers/data/modules/level2/*
+include dcsscrapers/data/modules/level3/*
+include dcsscrapers/data/modules/level4/*
+include dcsscrapers/data/modules/msc/*
+include dcsscrapers/data/timetable/*
+include dcssearch/faqs/*

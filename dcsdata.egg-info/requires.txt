@@ -1,0 +1,8 @@
+beautifulsoup4
+bs4
+pandas
+mysqlclient
+SQLAlchemy
+requests
+Whoosh
+lxml

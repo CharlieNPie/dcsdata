@@ -1,0 +1,202 @@
+Metadata-Version: 2.1
+Name: dcsdata
+Version: 0.0.9
+Summary: A text data tool for the University of Sheffield.
+Home-page: UNKNOWN
+Author: Charles E. Jewers
+Author-email: charlesejewers@gmail.com
+License: UNKNOWN
+Description: # DCSData
+        
+        ## Summary
+        
+        Data is beautiful. Studying Computer Science at the University of Sheffield is beautiful. It only made sense to combine the two. 
+        
+        This package provides tools for scraping data straight from the University of Sheffield Department of Computer Science website. Users of this package can access tabular data of DCS staff profiles, modules and timetables, and can also utilise the University's FAQ search functionality. 
+        
+        ### Example
+        
+            module_data = datascrapers.get_module_data()
+        
+            print(module_data["module code"][5])
+            print(module_data["module name"][5])
+        
+        Terminal Output:
+        
+            COM1008
+            Web and Internet Technology
+        
+        # Environment Setup
+        
+        **WARNING:** Source files utilising the dcsdata package must be in the same directory as the dcsdata directory itself. This could not be fixed due to time constraints, but will be looked at in the near future.
+        
+        **Requirements:**
+        
+        - Python 3.6 or higher
+        - pip package manager 
+        - Microsoft Visual C++ Build Tools : https://visualstudio.microsoft.com/downloads/
+        - MySQL Server 8.0
+        
+        A Python virtual environment must be set up in your project directory. For details on installing pip and setting up a virtual environment visit https://packaging.python.org/guides/installing-using-pip-and-virtualenv/.
+        
+        The following instructions are specifically for Windows machines. Other operating systems should have no problem running the code using equivalent terminal commands.
+        
+        **Instructions:**
+        
+        1. Download dcsdata folder into your project directory. 
+        
+        2. Activate your Python virtual environment.
+        
+        3. Navigate into the dcsdata directory:
+        
+                cd dcsdata
+        
+            A requirements.txt file should be located in the folder.
+        
+        4.  Run the following in your terminal:
+        
+                python -m pip install -r requirements.txt
+        
+        Once dependencies have been installed, dcsdata modules should be available for your project development. 
+        
+        
+        # Data Scrapers
+        
+        ## Getting Started
+        
+        Provides the user with data tables for staff, modules and timetables specific to Computer Science courses at the University of Sheffield.
+        
+        Data scraper methods can be imported to your Python project with the following:
+        
+            from dcsdata.dcsscrapers import datascrapers
+        
+        The first three methods documented below each return a dictionary of lists, where each key represents a table heading and the value is a list of the relevant data corresponding to the heading. Details of headings are listed with their corresponding methods.
+        
+        ## Staff Profiles
+        
+        Obtain a dictionary of staff profiles by calling the following:
+        
+            staff_data = datascrapers.get_staff_data()
+        
+        
+        **Staff Headings:**
+        
+        "firstname", "surname", "telephone", "email", "researchgroup", "biography"
+        
+        An individual list can be accessed by providing these as keys to the dictionary object. 
+        
+        
+        ## Module Information
+        
+        Obtain a dictionary of module information by calling the following:
+        
+            module_data = datascrapers.get_module_data()
+        
+        **Module Headings:**
+        
+        "module code", "module name", "summary", "session", "credits", "assessment", "lecturer", "aims", "objectives", "content", "teaching method", "feedback"
+        
+        ## Timetable Data
+        
+        Obtain a dictionary of timetable data by calling the following:
+        
+            timetable_data = datascrapers.get_timetable_data()
+        
+        **Timetable Headings:**
+        
+        "unit code", "unit title", "group", "activity", "day", "start time", "end time", "university weeks", "room no", "location", "lecturer"
+        
+        
+        ## MySQL functionality
+        
+        A MySQL database can be populated with data tables scraped from the University website by using the pop_database method.
+        
+        To specify which data table the user wants to generate in the database (staff, modules, or timetables), three Enum options can be chosen to supply the first argument of the pop_database method. These are found in the ScraperData class:
+        
+            staff_enum = datascrapers.ScraperData.STAFF
+            module_enum = datascrapers.ScraperData.MODULES
+            timetable_enum = datascrapers.ScraperData.TIMETABLES
+        
+        In the following example, a table containing staff data is created in a database on host "localhost" with name "example_database" accessed with username "user" and password "password1". 
+        
+            scraper_enum = datascrapers.ScraperData.STAFF
+        
+            ## scraper_enum is then passed in the first argument
+            datascrapers.pop_database(
+                scraper_enum,
+                "example_database",
+                "user",
+                "password1"
+                "localhost"
+            )
+        
+        **NOTICE:** A database with the argument name must be created by the user in MySQL before attempting to run the method. 
+        
+        ## Further Usage
+        
+        The dictionaries returned by get_staff_data, get_module_data and are ready-made for tabular data formatting. Python libraries such as Pandas can be called immediately on the object without further manipulation being required. 
+        
+        Input:
+        
+            import pandas as pd
+        
+            dataframe = pd.DataFrame(get_module_data())
+        
+            print(dataframe)
+        
+        Extract of output from terminal:
+        
+            lecturer                                            module code  \
+            0   Dr Kirill Bogdanov, Dr Phil McMinn and Mr Andr...     COM1001   
+            1   Dr Paul Watton, Dr Mike Stannet & Dr Mark Stev...     COM1002
+            ...
+        
+        See source code documentation for more information on all of the methods. 
+        
+        # FAQ Search
+        
+        ## Getting Started
+        
+        The FAQ search can take a search query, search over the University's AskUS documents and return relevant search results.
+        
+        FAQ search functionality can be imported with the following code:
+        
+            from dcsdata.dcssearch.searchengine import create_index, conduct_search
+        
+        create_index is used to generate a search index directory. conduct_search takes a string query and searches over the index directory to rank the documents. The documents deemed most relevant to the query are returned as tuples, each containing a question and its answer. 
+        
+        ## Creating an Index
+        
+        Generating an index of FAQ data is simple:
+        
+            create_index("target_dir")
+        
+        The folder target_dir will be created in the user's project directory (if it does not exist already). 
+        
+        ## Querying the Index
+        
+        The following is an example use of the search_results method. Note that "target_dir" points to the same directory generated by the create_index method. The final argument (3) tells the method how many result tuples should be returned.
+        
+            search_results = conduct_search("how much are living costs", "target_dir", 3)
+        
+            for result in search_results:
+                print("Question: ", result[0]) 
+                print("Answer: ", result[1][:30], "...")
+                print()
+        
+        Terminal Output:
+        
+            Question:  How much does it cost to live in Sheffield?
+            Answer:   Things cost less in Sheffield ...
+        
+            Question:  How much does membership to Sport Sheffield cost?
+            Answer:  Sport Sheffield offers a range ...
+        
+            Question:  How do I budget for studying at University?
+            Answer:  You can use the University's M ...
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

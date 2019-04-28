@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- currently running as speedy handler - DA 04-sep-2012 -->
+ 		<!-- Version xxx 4.1: Sep 2012 -->
+<title>COM2001 Advanced Programming Topics</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="https://www.shef.ac.uk/img/sheffield/favicon.ico" />
+<link rel="stylesheet" href="https://www.shef.ac.uk/css/sheffield/general.css" />
+<link rel="stylesheet" href="/css/local.css" />
+<!--[if lt IE 9]>
+<script src="https://www.shef.ac.uk/js/sheffield/html5.js"></script>
+<![endif]-->
+<script src="https://www.shef.ac.uk/js/sheffield/jquery/jquery-1.10.1.min.js"></script>
+<script src="https://www.shef.ac.uk/js/sheffield/sheffield.js"></script>
+<link rel="stylesheet" href="https://www.shef.ac.uk/cmlink/7.19964">
+</head>
+<body>
+<nav id="globalNavigation">
+<!-- global navigation links -->
+<ul>
+<li><a href="http://www.sheffield.ac.uk">University</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/faculty/engineering">Faculty</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/dcs">Department</a> |</li>
+<li><a href="http://www.dcs.shef.ac.uk/intranet/" accesskey="1" title="Access Key: 1">Intranet</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/nap/panel/login" accesskey="m" title="Access Key: M">Log into MUSE</a> |</li>
+<li><a href="http://portal.shef.ac.uk/cp/ip/login?sys=generic&nbsp;url=null?cpip=webct">Log into MOLE</a></li>
+</ul>
+<!-- // global navigation links -->
+<!-- site search -->
+<form name="gs" method="get" action="http://google.shef.ac.uk/search" id="searchBox">
+	<fieldset>
+		<label for="searchterms">Search for</label>
+		<input type="search" name="q" size="20" maxlength="100" value=" your search" id="searchterms" onfocus="value=''" />
+		<input type="submit" name="btnG" value="Search" class="submit" />
+		<input type="hidden" name="sort" value="date:D:L:d1" />
+		<input type="hidden" name="output" value="xml_no_dtd" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="oe" value="UTF-8" />
+		<input type="hidden" name="client" value="default_frontend" />
+		<input type="hidden" name="proxystylesheet" value="default_frontend" />
+		<input type="hidden" name="site" value="default_collection" />
+	</fieldset>
+</form>   
+<!-- // site search --></nav><!-- header -->
+<header>
+	<table>
+		<tr>
+			<td id="headerLeft">
+				<div id="headerCrest">
+					<a href="http://www.sheffield.ac.uk" title="The University of Sheffield homepage" accesskey="1"><img src="https://www.shef.ac.uk/img/sheffield/crest-l.gif" alt="The University of Sheffield" /></a>
+				</div>
+			</td>
+			<td id="headerRight">
+				<div id="headerTitle">
+					<span id="pageTitle">Department of Computer Science</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</header>
+<!-- // header -->
+<!-- breadcrumbs -->
+<!-- nav id="breadcrumbs"> You are here:
+    <ol>
+                            <li>
+                <a href="/">
+                                	Home</a>
+                                 /             </li>
+                    <li>
+                <a href="/dcs">
+                                	Computer Science</a>
+                                            </li>
+                    </ol></nav -->
+<!-- // breadcrumbs --><!-- local navigation -->
+<nav id="localNavigation">
+<!-- ul><li>&nbsp;</li></ul -->
+<p>&nbsp;</p>
+</nav>
+<!-- // local navigation -->
+ 		<!-- Local Content -->
+		<table id="contentContainer" summary="content layout table" cellpadding="0" cellspacing="0" border="0">
+ 		<tr>
+   			<td id="bodyContainer">
+				<!-- content start -->
+				<a name="content"></a>
+				<h2>COM2001 Advanced Programming Topics</h2>
+    <table align="center" cellpadding="2" cellspacing="2" width="100%">
+      <tbody>
+        <tr>
+          <th>Summary</th>
+          <td> This module will be based around Functional Programming (FP)
+            and Abstract Data Types (ADTs). FP leads to simple, elegant
+            programs that are provably correct, expressing problems
+            declaratively and recursively. Topics covered include:
+            values, types, expressions, functions, pattern matching,
+            recursive function design, partial application and
+            higher-order functions. An ADT is a computational data
+            structure, such as a list or tree, that can be defined
+            abstractly in terms of the formal properties of its
+            operations. The course will encourage program design from an
+            abstract viewpoint, as a collection of interacting ADTs, and
+            will also cover complexity analysis for algorithms and proof
+            of correctness. </td>
+        </tr>
+        <tr>
+          <th>Session</th>
+          <td>Academic Year 2017/18</td>
+        </tr>
+        <tr>
+          <th>Credits</th>
+          <td>20 </td>
+        </tr>
+        <tr>
+          <th>Assessment</th>
+          <td>
+            <ul>
+              <li>Assessment will be 100% coursework</li>
+              <li>This module has the explicit objective of developing
+                programming skills. Failure to develop and submit
+                programs of a minimum satisfactory standard will result
+                in loss of credits, notwithstanding the weighting of
+                coursework components. </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Lecturer(s)</th>
+          <td> Prof. Phil Green &amp; Dr Mike Stannett</td>
+        </tr>
+        <tr>
+          <th>Resources</th>
+          <td>
+            <ul>
+              <li><a href="https://vle.shef.ac.uk">MOLE</a></li>
+              <li><a href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/practicalmarks/com2001.pdf">Unconfirmed
+
+
+
+
+                  practical marks when available</a></li>
+              <li><a
+href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/pastpapers.html">Exam
+                  Papers, past 2 years (where applicable) </a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Aims</th>
+          <td> <p>This unit aims to:</p>
+            <ul>
+              <li> develop an understanding of types, values, functions
+              and expressions; </li>
+              <li> develop an understanding of programming as the
+              simplification of expressions; </li>
+              <li>develop an understanding of recursion and recursive
+              function design; </li>
+              <li> introduce notions of pattern matching, algebraic data
+              types, lazy programming ; </li>
+              <li> introduce the concepts of partial application and
+              higher-order functional programming; </li>
+              <li> introduce the formal concept of an ADT with its
+              operations and axioms; </li>
+              <li>develop skills in conceptual program design viewed as
+              collections of ADTs; </li>
+              <li>deepen an understanding of data structures and
+              algorithmic complexity; </li>
+              <li>develop logical reasoning skills about abstract
+              properties of ADTs; </li>
+              <li>develop skills for proving correctness of algorithms and ADTs;</li>
+              <li>enhance recursive, parametric and higher-order
+              programming skills. </li>
+          </ul></td>
+        </tr>
+        <tr>
+          <th>Objectives</th>
+          <td> <p>By the end of the unit, a candidate will be able to:</p>
+            <ul>
+              <li>understand the functional model in which a program is a
+              set of nested expressions; </li>
+              <li>be skilled in the design of recursive functions using
+              base and recursive cases; </li>
+              <li>understand the use of partial and higher-order function
+              application techniques; </li>
+              <li>be skilled in the construction of practical,
+              declarative and modular programs; </li>
+              <li>define Abstract Data Types, with their operations and
+              axioms; </li>
+              <li>interpret a real world system and model it at an
+              abstract level, using ADTs; </li>
+              <li>select appropriate data structures and algorithms to
+              solve problems efficiently; </li>
+              <li>analyse the computational complexity of algorithms;</li>
+              <li>complete simple proofs derived from axiomatic
+              properties of ADTs; </li>
+              <li>complete simple inductive proofs of algorithmic correctness;</li>
+              <li>implement ADTs effectively in Haskell, using recursion,
+              parametric polymorphism and higher order applicative
+              techniques. </li>
+          </ul></td>
+        </tr>
+        <tr>
+          <th>Content</th>
+          <td><strong>Semester 1 </strong><br>
+            Basic functional programming and Haskell
+            <ul>
+              <li>Introduction to functional programming: functions,
+                parameters, arguments, binding, environments and types;</li>
+              <li>Built-in types such as Integers, Reals and Lists;</li>
+              <li>Recursive function definitions: tail recursion and
+                general recursion;</li>
+              <li>Function definition using multiple equations, patterns
+                and guards.</li>
+            </ul>
+            Further topics in functional programming: [ 5 lectures ]
+            <ul>
+              <li>Anonymous functions;</li>
+              <li>Higher order functions;</li>
+              <li>Partial application;</li>
+              <li>User-defined data structures and type classes.</li>
+            </ul>
+            Design and verification of functional programs: [ 4 lectures
+            ]
+            <ul>
+              <li>Top-down design and bottom-up implementation of
+                functional programs;</li>
+              <li>Algebraic data types</li>
+              <li>Data abstraction.</li>
+            </ul>
+            Common data structures: [ 3 lectures ]
+            <ul>
+              <li>Linear structures, stacks, queues, linear lists;</li>
+              <li>Non linear structures, trees, sets.</li>
+            </ul>
+            <p><strong>Semester 2            </strong></p>
+            <p>Abstract Data Types</p>
+            <ul>
+              <li>specification of ADTs</li>
+              <li>data structures and their efficiency</li>
+              <li>implementation</li>
+            </ul>
+            <p>Program Proof</p>
+            <ul>
+              <li>induction over integers</li>
+              <li>structural induction</li>
+              <li>loop invariants</li>
+            </ul>
+<p>Complexity</p>
+            <ul>
+              <li>comparing the efficiency of different algorithms</li>
+              <li>finding the worst-case time complexity of specific programs</li>
+            </ul>
+            <p>Monads</p>
+            <ul>
+              <li>Haskell's I/O system</li>
+              <li>Monads in general</li>
+            </ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <th>Teaching Method</th>
+          <td>
+            <ul>
+              <li>There will be up to 3 lectures per week, with not more
+                than 20 lectures per semester.</li>
+              <li>As well as the lectures there will be surgeries as
+                required.</li>
+              <li>Practical work will develop the ability to define
+                recursive algorithms to solve problems and design
+                Haskell programs to implement these algorithms. </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Feedback</th>
+          <td>Assignments marked using published criteria, submission
+            commented and returned by MOLE within 3 weeks. </td>
+        </tr>
+        <tr>
+          <th>Recommended Reading</th>
+          <td>
+            <ul>
+              <li> Bryan O'Sullivan, Don Stewart and John Goerzen, "Real
+                World Haskell", O'Reilly Media, 2008. Free online access
+                to full text at http://book.realworldhaskell.org/ </li>
+              <li>Graham Hutton, "Programming in Haskell", Cambridge
+                University Press, Second Edition, 2016.</li>
+              <li>Simon Thompson, "Haskell: The Craft of Functional
+                Programming", (Second Edition). Addison- Wesley, 1999. </li>
+              <li>Thomas Cormen, Charles Lieserson, Ronald Rivest and Clifford Stein, &quot;Introduction to Algorithms&quot;, (Third edition), MIT Press, 2009.</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- footer -->
+               	<!-- content end -->
+			</td>
+		</tr>
+		</table>
+		<!-- // Local Content -->
+<!-- Footer -->
+<div id="footer">
+	<div id="footerLeft">
+	  <ul>
+	  <li>&nbsp;  Last modified: Tue Sep 12 10:48:55 2017.</li>
+	  </ul>
+	</div>
+	<div id="footerRight">
+	  <a href="mailto:com-webcontent@sheffield.ac.uk" accesskey="9" title="Access Key: 9">Report an Error</a>
+	</div>
+</div>
+<!-- // Footer -->
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- currently running as speedy handler - DA 04-sep-2012 -->
+ 		<!-- Version xxx 4.1: Sep 2012 -->
+<title>COM4521 Parallel Computing with Graphical Processing Units (GPUs)</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="https://www.shef.ac.uk/img/sheffield/favicon.ico" />
+<link rel="stylesheet" href="https://www.shef.ac.uk/css/sheffield/general.css" />
+<link rel="stylesheet" href="/css/local.css" />
+<!--[if lt IE 9]>
+<script src="https://www.shef.ac.uk/js/sheffield/html5.js"></script>
+<![endif]-->
+<script src="https://www.shef.ac.uk/js/sheffield/jquery/jquery-1.10.1.min.js"></script>
+<script src="https://www.shef.ac.uk/js/sheffield/sheffield.js"></script>
+<link rel="stylesheet" href="https://www.shef.ac.uk/cmlink/7.19964">
+</head>
+<body>
+<nav id="globalNavigation">
+<!-- global navigation links -->
+<ul>
+<li><a href="http://www.sheffield.ac.uk">University</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/faculty/engineering">Faculty</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/dcs">Department</a> |</li>
+<li><a href="http://www.dcs.shef.ac.uk/intranet/" accesskey="1" title="Access Key: 1">Intranet</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/nap/panel/login" accesskey="m" title="Access Key: M">Log into MUSE</a> |</li>
+<li><a href="http://portal.shef.ac.uk/cp/ip/login?sys=generic&nbsp;url=null?cpip=webct">Log into MOLE</a></li>
+</ul>
+<!-- // global navigation links -->
+<!-- site search -->
+<form name="gs" method="get" action="http://google.shef.ac.uk/search" id="searchBox">
+	<fieldset>
+		<label for="searchterms">Search for</label>
+		<input type="search" name="q" size="20" maxlength="100" value=" your search" id="searchterms" onfocus="value=''" />
+		<input type="submit" name="btnG" value="Search" class="submit" />
+		<input type="hidden" name="sort" value="date:D:L:d1" />
+		<input type="hidden" name="output" value="xml_no_dtd" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="oe" value="UTF-8" />
+		<input type="hidden" name="client" value="default_frontend" />
+		<input type="hidden" name="proxystylesheet" value="default_frontend" />
+		<input type="hidden" name="site" value="default_collection" />
+	</fieldset>
+</form>   
+<!-- // site search --></nav><!-- header -->
+<header>
+	<table>
+		<tr>
+			<td id="headerLeft">
+				<div id="headerCrest">
+					<a href="http://www.sheffield.ac.uk" title="The University of Sheffield homepage" accesskey="1"><img src="https://www.shef.ac.uk/img/sheffield/crest-l.gif" alt="The University of Sheffield" /></a>
+				</div>
+			</td>
+			<td id="headerRight">
+				<div id="headerTitle">
+					<span id="pageTitle">Department of Computer Science</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</header>
+<!-- // header -->
+<!-- breadcrumbs -->
+<!-- nav id="breadcrumbs"> You are here:
+    <ol>
+                            <li>
+                <a href="/">
+                                	Home</a>
+                                 /             </li>
+                    <li>
+                <a href="/dcs">
+                                	Computer Science</a>
+                                            </li>
+                    </ol></nav -->
+<!-- // breadcrumbs --><!-- local navigation -->
+<nav id="localNavigation">
+<!-- ul><li>&nbsp;</li></ul -->
+<p>&nbsp;</p>
+</nav>
+<!-- // local navigation -->
+ 		<!-- Local Content -->
+		<table id="contentContainer" summary="content layout table" cellpadding="0" cellspacing="0" border="0">
+ 		<tr>
+   			<td id="bodyContainer">
+				<!-- content start -->
+				<a name="content"></a>
+				<h2>COM4521 Parallel Computing with Graphical Processing Units (GPUs)</h2>
+    <table align="center" cellpadding="2" cellspacing="2" width="100%">
+      <tbody>
+        <tr>
+          <th>Summary</th>
+          <td>Accelerator architectures are discrete processing units which supplement a base processor with the objective of providing advanced performance at lower energy cost. Performance is gained by a design which favours a high number of parallel compute cores at the expense of imposing significant software challenges. This module looks at accelerated computing from multi-core CPUs to GPU accelerators with many TFlops of theoretical performance. The module will give insight into how to write high performance code with specific emphasis on GPU programming with NVIDIA CUDA GPUs. A key aspect of the module will be understanding what the implications of program code are on the underlying hardware so that it can be optimised. Students should be aware that there are limited places available on this course.</td>
+        </tr>
+        <tr>
+          <th>Session</th>
+          <td>Spring 2018/19</td>
+        </tr>
+        <tr>
+          <th>Credits</th>
+          <td>15 </td>
+        </tr>
+        <tr>
+          <th>Assessment</th>
+          <td><p>80% for project assignment of which 40% is for the delivery of course work (code) and 40% is for written report describing methods and techniques</p>
+          <p>Two 10% multiple choice quizzes. </p></td>
+        </tr>
+        <tr>
+          <th>Lecturer(s)</th>
+          <td>Dr Mozhgan Kabiri-Chimeh</td>
+        </tr>
+        <tr>
+          <th>Resources</th>
+          <td>
+            <ul>
+              <li><a href="https://vle.shef.ac.uk">MOLE</a></li>
+              <li><a href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/practicalmarks/com4521.pdf">Unconfirmed
+
+
+
+
+                  practical marks when available</a></li>
+              <li><a
+href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/pastpapers.html">Exam
+                  Papers, past 2 years (where applicable)</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Aims</th>
+          <td><ul>
+            <li>To introduce modern accelerator architectures, explain the difference between data and task parallelism and raise awareness into how the practical and theoretical performance of architectures differs.</li>
+            <li> To give practical knowledge of how GPU programs operate and how they can be utilised for high performance applications.</li>
+            <li>To develop an understanding of the importance of benchmarking and profiling in order to recognise factors limiting performance and to address these through optimisation.</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <th>Objectives</th>
+          <td> <p>By the end of this course students will be able to: </p>
+            <ul>
+              <li>Understand how to write C programs and manage memory allocation manually.</li>
+              <li>Utilise OpenMP to write programs for multi core architectures to improve code performance.</li>
+              <li>Be able to describe and discuss performance techniques for multi core processors.</li>
+              <li>Program GPUs for general purpose use with the CUDA language.</li>
+              <li>Appreciate how GPU program performance can be improved through intelligent caching.</li>
+              <li>Appreciate the scope, potential and limitations of accelerators for improving code performance.</li>
+              <li>Benchmark and profile GPU programs.</li>
+              <li>Identify limiting factors to code performance and address these through architecture specific optimisation techniques.</li>
+              <li>Recognise and understand the importance of parallel primitives (such as scan and reduce) and understand how these can be implemented with data parallelism.</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <th>Content</th>
+          <td>
+          <ul>
+            <li>Introduction to accelerated computing</li>
+            <li>Introduction to programming in C</li>
+            <li>Pointer and Memory</li>
+            <li>Optimising C programs</li>
+            <li>Multi core programming with OpenMP</li>
+            <li>Introduction to Accelerated Computing</li>
+            <li>Introduction to CUDA</li>
+            <li>GPU memory systems</li>
+            <li>Caching and Shared Memory</li>
+            <li>Synchronisation and Atomics</li>
+            <li>Parallel Primitives</li>
+            <li>Asynchronous programming</li>
+            <li>Profiling and Optimisation of GPU programs</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <th>Restrictions </th>
+          <td>This module has a large amount of practical programming. Only students with a strong programming background should participate.</td>
+        </tr>
+        <tr>
+          <th>Teaching Method</th>
+          <td><p><strong>Weekly lectures</strong> will introduce students to the background on CPU and GPU architectures and programming techniques. Lectures will highlight key design principles for parallel and GPU programming to give students the necessary insight to be able to constructively look at problems and understand the implications of parallel computing. </p>
+          <p><strong>Lab sessions</strong> will facilitate hands on learning of practical skills through targeted exercises </p></td>
+        </tr>
+        <tr>
+          <th>Feedback</th>
+          <td>Students will receive continuous feedback from lab sessions and Google discussion groups. Feedback will also be given on marked quiz assignments and for the main assignment.</td>
+        </tr>
+        <tr>
+          <th>Recommended Reading</th>
+          <td><ul>
+            <li>Edward Kandrot, Jason Sanders, &quot;CUDA by Example: An Introduction to General-Purpose GPU Programming&quot;, Addison Wesley 2010.</li>
+            <li>Brian Kernighan, Dennis Ritchie, &ldquo;The C Programming Language (2nd Edition)&rdquo;, Prentice Hall 1988.</li>
+          </ul></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- footer -->
+               	<!-- content end -->
+			</td>
+		</tr>
+		</table>
+		<!-- // Local Content -->
+<!-- Footer -->
+<div id="footer">
+	<div id="footerLeft">
+	  <ul>
+	  <li>&nbsp;  Last modified: Fri Sep 21 14:10:29 2018.</li>
+	  </ul>
+	</div>
+	<div id="footerRight">
+	  <a href="mailto:com-webcontent@sheffield.ac.uk" accesskey="9" title="Access Key: 9">Report an Error</a>
+	</div>
+</div>
+<!-- // Footer -->
+
+</body>
+</html>

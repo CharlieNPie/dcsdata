@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- currently running as speedy handler - DA 04-sep-2012 -->
+ 		<!-- Version xxx 4.1: Sep 2012 -->
+<title>COM3190 Theory of Distributed Systems</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="https://www.shef.ac.uk/img/sheffield/favicon.ico" />
+<link rel="stylesheet" href="https://www.shef.ac.uk/css/sheffield/general.css" />
+<link rel="stylesheet" href="/css/local.css" />
+<!--[if lt IE 9]>
+<script src="https://www.shef.ac.uk/js/sheffield/html5.js"></script>
+<![endif]-->
+<script src="https://www.shef.ac.uk/js/sheffield/jquery/jquery-1.10.1.min.js"></script>
+<script src="https://www.shef.ac.uk/js/sheffield/sheffield.js"></script>
+<link rel="stylesheet" href="https://www.shef.ac.uk/cmlink/7.19964">
+</head>
+<body>
+<nav id="globalNavigation">
+<!-- global navigation links -->
+<ul>
+<li><a href="http://www.sheffield.ac.uk">University</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/faculty/engineering">Faculty</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/dcs">Department</a> |</li>
+<li><a href="http://www.dcs.shef.ac.uk/intranet/" accesskey="1" title="Access Key: 1">Intranet</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/nap/panel/login" accesskey="m" title="Access Key: M">Log into MUSE</a> |</li>
+<li><a href="http://portal.shef.ac.uk/cp/ip/login?sys=generic&nbsp;url=null?cpip=webct">Log into MOLE</a></li>
+</ul>
+<!-- // global navigation links -->
+<!-- site search -->
+<form name="gs" method="get" action="http://google.shef.ac.uk/search" id="searchBox">
+	<fieldset>
+		<label for="searchterms">Search for</label>
+		<input type="search" name="q" size="20" maxlength="100" value=" your search" id="searchterms" onfocus="value=''" />
+		<input type="submit" name="btnG" value="Search" class="submit" />
+		<input type="hidden" name="sort" value="date:D:L:d1" />
+		<input type="hidden" name="output" value="xml_no_dtd" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="oe" value="UTF-8" />
+		<input type="hidden" name="client" value="default_frontend" />
+		<input type="hidden" name="proxystylesheet" value="default_frontend" />
+		<input type="hidden" name="site" value="default_collection" />
+	</fieldset>
+</form>   
+<!-- // site search --></nav><!-- header -->
+<header>
+	<table>
+		<tr>
+			<td id="headerLeft">
+				<div id="headerCrest">
+					<a href="http://www.sheffield.ac.uk" title="The University of Sheffield homepage" accesskey="1"><img src="https://www.shef.ac.uk/img/sheffield/crest-l.gif" alt="The University of Sheffield" /></a>
+				</div>
+			</td>
+			<td id="headerRight">
+				<div id="headerTitle">
+					<span id="pageTitle">Department of Computer Science</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</header>
+<!-- // header -->
+<!-- breadcrumbs -->
+<!-- nav id="breadcrumbs"> You are here:
+    <ol>
+                            <li>
+                <a href="/">
+                                	Home</a>
+                                 /             </li>
+                    <li>
+                <a href="/dcs">
+                                	Computer Science</a>
+                                            </li>
+                    </ol></nav -->
+<!-- // breadcrumbs --><!-- local navigation -->
+<nav id="localNavigation">
+<!-- ul><li>&nbsp;</li></ul -->
+<p>&nbsp;</p>
+</nav>
+<!-- // local navigation -->
+ 		<!-- Local Content -->
+		<table id="contentContainer" summary="content layout table" cellpadding="0" cellspacing="0" border="0">
+ 		<tr>
+   			<td id="bodyContainer">
+				<!-- content start -->
+				<a name="content"></a>
+				<h2>COM3190 Theory of Distributed Systems</h2>
+    <table align="center" cellpadding="2" cellspacing="2" width="100%">
+      <tbody>
+        <tr>
+          <th>Summary</th>
+          <td> The aim of this module is to set out a
+            strong theoretical basis for the analysis and design of
+            concurrent, distributed and mobile systems. We will use the
+            pi-calculus to model and reason about complex systems,
+            studying both its formal semantics and its many uses, via a
+            number of examples. Students should be aware that there are limited places available on this course.</td>
+        </tr>
+        <tr>
+          <th>Session</th>
+          <td>Spring 2018/19</td>
+        </tr>
+        <tr>
+          <th>Credits</th>
+          <td>10 </td>
+        </tr>
+        <tr>
+          <th>Assessment</th>
+          <td> The module is assessed by assignment (30%) and written examination (70%).</td>
+        </tr>
+        <tr>
+          <th>Lecturer(s)</th>
+          <td>Dr Ramsay Taylor</td>
+        </tr>
+        <tr>
+          <th>Resources</th>
+          <td><ul>
+            <li><a href="https://vle.shef.ac.uk">MOLE</a></li>
+            <li><a href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/practicalmarks/com3190.pdf">Unconfirmed
+
+
+
+
+
+
+
+
+                practical marks when available</a></li>
+            <li><a
+href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/pastpapers.html">Exam
+                Papers, past 2 years (where applicable)</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Aims</th>
+          <td>
+            <p>The aims of this module are:</p>
+            <ul>
+              <li> to develop an understanding of the subtleties of
+                concurrent and mobile systems' behaviours;</li>
+              <li>to develop an understanding of process calculi, in
+                particular CCS and the pi-calculus;</li>
+              <li>to develop the ability to construct models of simple
+                systems in these calculi, and where appropriate to use
+                software tools to investigate their properties;</li>
+              <li> to develop an understanding of the formal semantics
+                of process algebras such as CCS and the pi-calculus;</li>
+              <li> to develop the ability to reason about system
+                behaviour using process algebras and related logics, and to program concurrent systems in Erlang.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Objectives</th>
+          <td> By the end of this course the students should:
+            <ul>
+              <li> appreciate the fundamental techniques and principles
+                needed to formally specify languages for concurrency;</li>
+              <li>understand the mathematical theory underlying CCS and
+                the pi-calculus and be able to apply it to concrete
+                examples;</li>
+              <li>be able to construct concurrent specifications from
+                requirements, to transform and analyse them using
+                appropriate tools and techniques, and to apply these
+                skills to problems drawn from a number of different
+                fields; </li>
+              <li>appreciate the scope and limits of algebraic
+                techniques in the analysis of concurrency;</li>
+              <li> have developed their ability to critically evaluate
+                their work and to discuss it coherently with others;</li>
+              <li>and have expanded their capacity to model, reason
+                about and evaluate complex systems.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Content</th>
+          <td>
+            <p>1. INTRODUCTION<br>
+              Sequential vs concurrent systems; real vs interleaving
+              concurrency; mobile systems.<br>
+              <br>
+              2. PART ONE: CCS</p>
+            <ul>
+              <li>Using simple equations to represent complex systems;
+                synchronisation and non-determinism; structured
+                operational semantics; flow diagrams and transition
+                diagrams; simulation and bisimulation; the importance of
+                hidden internal actions.</li>
+              <li>Detailed examples: modelling a conversation; modelling
+                an n-place buffer.</li>
+              <li>Modal logics, model checkers and workbenches: using
+                software to reason about concurrent systems.</li>
+            </ul>
+            <p>3. INTERLUDE: Other approaches</p>
+            <ul>
+              <li>CSP, Petri nets, Mazurkiewicz traces; P systems and
+                other bio-inspired models. </li>
+            </ul>
+            <p>4. PART TWO: Pi-Calculus and its successors</p>
+            <ul>
+              <li>Adding mobility to CCS; transition rules; replication
+                vs recursion; scope extrusion; process equivalence.</li>
+              <li>The computational power of pi-calculus: representing
+                data types and functions as pi-calculus processes.</li>
+              <li>Variations on a theme: stochastic pi, security and
+                ambients, modelling the flow of encrypted data.</li>
+            </ul>
+            <p>5. DETAILED CASE STUDY<br>
+              A case study illustrating the techniques used in modelling real-world situations.<br>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th>Essential skills</th>
+          <td>Strong grasp of mathematical logic.</td>
+        </tr>
+        <tr>
+          <th>Teaching Method</th>
+          <td> In addition to lectures, the course will include exercise
+            sheets and tutorial sessions; these will cover both the course material and the use of the programming language Erlang to model concurrent process behaviours.</td>
+        </tr>
+        <tr>
+          <th>Feedback</th>
+          <td> Students will receive feedback in lectures and during the
+            weekly lab sessions. Weekly exercise sheets will also be
+            provided to help students assess their own progress.
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <th>Recommended Reading</th>
+          <td>
+            <p>Recommended Reading</p>
+            <p> A list of relevant sources will be provided on the MOLE webpages. Some
+              important older titles include:</p>
+            <ul>
+              <li>Robin Milner (1999) Communicating and Mobile Systems:
+                The Pi Calculus. CUP.</li>
+              <li>Davide Sangiorgi (2003) The Pi-Calculus: A Theory of
+                Mobile Processes. CUP.</li>
+              <li>Robin Milner, Joachim Parrow and David Walker (1989,
+                revised 1990) <br>
+                A Calculus of Mobile Processes, Part I. Tech. Report ECS-LFCS-89-85, Laboratory for the
+                Foundations of Computer Science, Edinburgh University. Available online at: <a
+                  href="http://www.lfcs.informatics.ed.ac.uk/reports/89/ECS-LFCS-89-85/">http://www.lfcs.informatics.ed.ac.uk/reports/89/ECS-LFCS-89-85/</a></li>
+              <li>Robin Milner (1985) Communication and Concurrency.
+                Prentice Hall.</li>
+              <li>C.A.R. Hoare (1985) Communicating Sequential
+                Processes. Prentice Hall. <br>
+                Available online at: <a
+                  href="http://www.usingcsp.com/cspbook.pdf">http://www.usingcsp.com/cspbook.pdf</a></li>
+            </ul>
+            <p>Relevant journals            </p>
+            <ul>
+              <li> Formal Aspects of Computing </li>
+              <li> Theoretical Computer Science </li>
+              <li> Lecture Notes in Computer Science </li>
+            </ul>
+            <p>Related Software</p>
+            <ul>
+              <li>Erlang: <a href="http://www.erlang.org">http://www.erlang.org</a></li>
+              <li>Concurrency Workbench: <a
+                  href="http://homepages.inf.ed.ac.uk/perdita/cwb/">http://homepages.inf.ed.ac.uk/perdita/cwb/</a></li>
+              <li>Mobility Workbench: <a
+                  href="http://www.it.uu.se/research/group/mobility/mwb">http://www.it.uu.se/research/group/mobility/mwb</a></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- footer -->
+               	<!-- content end -->
+			</td>
+		</tr>
+		</table>
+		<!-- // Local Content -->
+<!-- Footer -->
+<div id="footer">
+	<div id="footerLeft">
+	  <ul>
+	  <li>&nbsp;  Last modified: Fri Sep 14 15:14:56 2018.</li>
+	  </ul>
+	</div>
+	<div id="footerRight">
+	  <a href="mailto:com-webcontent@sheffield.ac.uk" accesskey="9" title="Access Key: 9">Report an Error</a>
+	</div>
+</div>
+<!-- // Footer -->
+
+</body>
+</html>

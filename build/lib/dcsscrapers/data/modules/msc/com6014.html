@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- currently running as speedy handler - DA 04-sep-2012 -->
+ 		<!-- Version xxx 4.1: Sep 2012 -->
+<title>COM6014 Fundamental Security Properties and Mechanisms</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="https://www.shef.ac.uk/img/sheffield/favicon.ico" />
+<link rel="stylesheet" href="https://www.shef.ac.uk/css/sheffield/general.css" />
+<link rel="stylesheet" href="/css/local.css" />
+<!--[if lt IE 9]>
+<script src="https://www.shef.ac.uk/js/sheffield/html5.js"></script>
+<![endif]-->
+<script src="https://www.shef.ac.uk/js/sheffield/jquery/jquery-1.10.1.min.js"></script>
+<script src="https://www.shef.ac.uk/js/sheffield/sheffield.js"></script>
+<link rel="stylesheet" href="https://www.shef.ac.uk/cmlink/7.19964">
+</head>
+<body>
+<nav id="globalNavigation">
+<!-- global navigation links -->
+<ul>
+<li><a href="http://www.sheffield.ac.uk">University</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/faculty/engineering">Faculty</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/dcs">Department</a> |</li>
+<li><a href="http://www.dcs.shef.ac.uk/intranet/" accesskey="1" title="Access Key: 1">Intranet</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/nap/panel/login" accesskey="m" title="Access Key: M">Log into MUSE</a> |</li>
+<li><a href="http://portal.shef.ac.uk/cp/ip/login?sys=generic&nbsp;url=null?cpip=webct">Log into MOLE</a></li>
+</ul>
+<!-- // global navigation links -->
+<!-- site search -->
+<form name="gs" method="get" action="http://google.shef.ac.uk/search" id="searchBox">
+	<fieldset>
+		<label for="searchterms">Search for</label>
+		<input type="search" name="q" size="20" maxlength="100" value=" your search" id="searchterms" onfocus="value=''" />
+		<input type="submit" name="btnG" value="Search" class="submit" />
+		<input type="hidden" name="sort" value="date:D:L:d1" />
+		<input type="hidden" name="output" value="xml_no_dtd" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="oe" value="UTF-8" />
+		<input type="hidden" name="client" value="default_frontend" />
+		<input type="hidden" name="proxystylesheet" value="default_frontend" />
+		<input type="hidden" name="site" value="default_collection" />
+	</fieldset>
+</form>   
+<!-- // site search --></nav><!-- header -->
+<header>
+	<table>
+		<tr>
+			<td id="headerLeft">
+				<div id="headerCrest">
+					<a href="http://www.sheffield.ac.uk" title="The University of Sheffield homepage" accesskey="1"><img src="https://www.shef.ac.uk/img/sheffield/crest-l.gif" alt="The University of Sheffield" /></a>
+				</div>
+			</td>
+			<td id="headerRight">
+				<div id="headerTitle">
+					<span id="pageTitle">Department of Computer Science</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</header>
+<!-- // header -->
+<!-- breadcrumbs -->
+<!-- nav id="breadcrumbs"> You are here:
+    <ol>
+                            <li>
+                <a href="/">
+                                	Home</a>
+                                 /             </li>
+                    <li>
+                <a href="/dcs">
+                                	Computer Science</a>
+                                            </li>
+                    </ol></nav -->
+<!-- // breadcrumbs --><!-- local navigation -->
+<nav id="localNavigation">
+<!-- ul><li>&nbsp;</li></ul -->
+<p>&nbsp;</p>
+</nav>
+<!-- // local navigation -->
+ 		<!-- Local Content -->
+		<table id="contentContainer" summary="content layout table" cellpadding="0" cellspacing="0" border="0">
+ 		<tr>
+   			<td id="bodyContainer">
+				<!-- content start -->
+				<a name="content"></a>
+				<h2>COM6014 Fundamental Security Properties and Mechanisms</h2>
+    <table align="center" cellpadding="2" cellspacing="2" width="100%">
+      <tbody>
+        <tr>
+          <th>Summary</th>
+          <td> This wide-ranging module covers some fundamental concepts, properties, and mechanisms in security, e.g. identity, authentication, confidentiality,
+privacy, anonymity, availability and integrity. Cryptographic algorithms are explored together with major attacks (using a break-understand-and-fix
+approach). High level security protocols are explored (passwords, graphical passwords, key distribution and authentication protocols) together with
+some rigorous mechanisms for reasoning about their correctness (e.g. belief logics). Other mechanisms such as biometric authentication are also
+covered.</td>
+        </tr>
+        <tr>
+          <th>Session</th>
+          <td>Autumn 2018/19</td>
+        </tr>
+        <tr>
+          <th>Credits</th>
+          <td>15 </td>
+        </tr>
+        <tr>
+          <th>Assessment</th>
+          <td>
+            <ul>
+              <li> Examination (2 hours) - 70% [LO1, LO2, LO3, LO4, LO6]</li>
+              <li>  Podcast (3 minutes delivery) - 10% [LO4, LO5, LO6] </li>
+              <li>  Coursework (e.g. Mole quizzes) - 20% [LO1, LO2, LO3, LO4, LO6] </li>
+             
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Lecturer(s)</th>
+          <td> Professor John Clark </td>
+        </tr>
+        <tr>
+          <th>Resources</th>
+          <td>
+            <ul>
+              <li><a href="https://vle.shef.ac.uk">MOLE</a></li>
+              <li><a href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/practicalmarks/com2001.pdf">Unconfirmed
+
+
+
+
+                  practical marks when available</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Aims</th>
+          <td> <p>This unit aims to:</p>
+            <ul>
+              <li>  A1 provide the student with an understanding of fundamental security properties that we desire to maintain and why they are important
+and of the principal security mechanisms used to uphold these properties;  </li>
+              <li>   A2 develop an understanding of important security strength criteria, an appreciation of the sources of confidence that are associated with
+specific security mechanisms, and the ability to calculate or otherwise determine the strength of specific mechanisms in their deployed
+context - We will address quantitative criteria (e.g. for cryptographic elements) and qualitative approaches (e.g. some formal methods for protocol
+proofs of correctness); </li>
+              <li>A3 develop the analysis and synthesis skills necessary to identify important threats to systems under examination, evaluate the degree to
+which threats to systems are countered, and propose countermeasures or appropriate changes to countermeasures to achieve effective and
+efficient risk reduction;
+ </li>
+ <li>A4 enhance the communication and professional skills of the student; </li>
+ <li>A5 familiarise the student with the contextual issues relevant to the topics taught - professional, legal, ethical, political etc. </li>
+
+              
+          </ul></td>
+        </tr>
+        <tr>
+          <th>Objectives</th>
+          <td> <p>By the end of the unit, a candidate will be able to:</p>
+            <ul>
+              <li>LO1 [A1] explain what the major system security properties are, why they are important, and what mechanisms are available to support
+them; </li>
+              <li> LO2 [A2] describe security strength criteria for specific mechanisms (nonlinearity, autocorrelation and complexity measures for
+cryptographic components, classification
+performance criteria for biometrics, etc.), explain the rationale behind them, and determine
+the strength of specific mechanisms (e.g. calculate specific cryptographic strength indicators);</li>
+              <li>LO3 [A3] analyse deployed mechanisms, identify weaknesses in them, and demonstrate
+how they can be exploited;  </li>
+              <li>LO4 [A3] choose suitable security requirements and mechanisms in a variety of system contexts;  </li>
+              <li>LO5 [A4] independently research material relevant to the module and communicate findings to a non-specialist audience </li>
+<li> LO6 [A5] articulate the contextual issues (professional, legal, ethical, political etc) that apply. </li>
+
+              
+          </ul></td>
+        </tr>
+        <tr>
+		  <th>Content</th>
+			<td><p>Security&#8203; &#8203;Properties</p>
+			  <ul>
+			    <li>Confidentiality,&#8203; &#8203;Integrity,&#8203; &#8203;Availability,&#8203; &#8203;Anonymity,&#8203; &#8203;Non-repudiation,&#8203; &#8203;Privacy&#8203; &#8203;etc.</li>
+			    <li>Identification&#8203; &#8203;and&#8203; &#8203;Authentication:</li>
+			    <li>Password&#8203; &#8203;systems,&#8203; &#8203;graphical&#8203; &#8203;passwords&#8203; &#8203;systems,&#8203; &#8203;biometrics,&#8203; &#8203;CAPTCHAs,&#8203; &#8203;etc</li>
+			    <li>Social&#8203; &#8203;engineering&#8203; &#8203;attacks.</li>
+		      </ul>
+			  <p>Access&#8203; &#8203;Control<br>
+			    Basic&#8203; &#8203;mechanisms&#8203; &#8203;of&#8203; &#8203;Mandatory&#8203; &#8203;Access&#8203; &#8203;Control&#8203; &#8203;and&#8203; &#8203;Discretionary&#8203; &#8203;Access&#8203; &#8203;Control. Economics&#8203; &#8203;based&#8203; &#8203;risk&#8203; &#8203;budget&#8203; &#8203;approaches.</p>
+			  <p>Modern&#8203; &#8203;cryptography:</p>
+			  <ul>
+			    <li>Stream&#8203; &#8203;cipher&#8203; &#8203;basics.&#8203; &#8203;Divide&#8203; &#8203;and&#8203; &#8203;conquer&#8203; &#8203;correlation&#8203; &#8203;attacks.</li>
+			    <li>Block&#8203; &#8203;ciphers&#8203;.</li>
+			    <li>Modes&#8203; &#8203;of&#8203; &#8203;encryption:&#8203; &#8203;Code&#8203; &#8203;Book,&#8203; &#8203;CFB,&#8203; &#8203;OFB,&#8203; &#8203;CBC.</li>
+			    <li>Attacks&#8203; &#8203;on&#8203; &#8203;cryptographic&#8203; &#8203;algorithms:&#8203; &#8203;linear&#8203; &#8203;cryptanalysis,&#8203; &#8203;differential</li>
+			    <li>cryptanalysis</li>
+			    <li>Public&#8203; &#8203;key&#8203; &#8203;algorithms:&#8203; &#8203;From&#8203; &#8203;RSA&#8203; &#8203;and&#8203; &#8203;Diffie&#8203; &#8203;Hellman&#8203; &#8203;to&#8203; &#8203;modern&#8203; &#8203;systems.</li>
+			    <li>Cryptographic&#8203; &#8203;hash&#8203; &#8203;functions.</li>
+			    <li>Power,&#8203; &#8203;timing,&#8203; &#8203;fault&#8203; &#8203;injection&#8203; &#8203;and&#8203; &#8203;other&#8203; &#8203;attacks.</li>
+			    <li>Brute&#8203; &#8203;force&#8203; &#8203;potential.&#8203; &#8203;The&#8203; &#8203;rise&#8203; &#8203;of&#8203; &#8203;compute&#8203; &#8203;power.</li>
+			    <li>The&#8203; &#8203;threat&#8203; &#8203;from&#8203; &#8203;quantum&#8203; &#8203;computing.&#8203; &#8203;Post&#8203; &#8203;quantum&#8203; &#8203;crypto&#8203; &#8203;(at&#8203; &#8203;a&#8203; &#8203;high&#8203; &#8203;level).. Quantum&#8203; &#8203;key&#8203; &#8203;distribution&#8203; &#8203;protocols.</li>
+            </ul></td>
+     
+        </tr>
+        <tr>
+          <th>Teaching Method</th>
+          <td>
+            <ul>
+              <li> 10 hours of online materials. These content delivery elements will cover theoretical and practical aspects but also act as an index to
+referenced materials. All LOs except LO5. Detail provided by referenced materials;</li>
+<li> 8 hours (4 x 2 hours) practical sessions on cryptography related aspects.
+- This addresses LO1, LO2, LO3 and LO4. Students have to implement attacks and analyses which exposes strengths and weakness of
+mechanisms; </li>
+<li> 8 hours (4 x 2 hours) practical sessions on the non-cryptographic aspects.
+- This addresses LO1, LO2, LO3, LO4, LO6; </li>
+<li>  10 hours (5 x 2 hours) seminars/discussions by external speakers.
+- Addresses all LOs except LO5; </li>
+<li>  116 hours of independent study of supporting referenced materials. Wherever possible referenced materials will be freely available on
+the web. Students are expected to read around the subject. Independent study is an important component of the module.
+-Addresses all LOs. </li>
+
+
+           
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Feedback</th>
+          <td>Assignments marked using published criteria, submission
+            commented and returned by MOLE within 3 weeks. Students will meet with their supervisors regularly (and, where relevant, external clients) to discuss progress and problems encountered,
+and to review issues that arise during the project. Formative feedback will be provided by:
+a) online quizzes or multiple choice quizzes;
+b) surgery hours by teaching staff;
+c) verbal feedback in practical sessions. Some practical session work will also be evaluated by the students themselves with academic
+prompting and additional contributions where necessary. </td>
+        </tr>
+        <tr>
+          <th>Recommended Reading</th>
+          <td>See module web pages. Almost all supporting materials should be available from the web.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- footer -->
+               	<!-- content end -->
+			</td>
+		</tr>
+		</table>
+		<!-- // Local Content -->
+<!-- Footer -->
+<div id="footer">
+	<div id="footerLeft">
+	  <ul>
+	  <li>&nbsp;  Last modified: Fri Sep 21 10:27:24 2018.</li>
+	  </ul>
+	</div>
+	<div id="footerRight">
+	  <a href="mailto:com-webcontent@sheffield.ac.uk" accesskey="9" title="Access Key: 9">Report an Error</a>
+	</div>
+</div>
+<!-- // Footer -->
+
+</body>
+</html>

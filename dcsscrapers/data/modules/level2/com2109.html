@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- currently running as speedy handler - DA 04-sep-2012 -->
+ 		<!-- Version xxx 4.1: Sep 2012 -->
+<title>COM2109 Automata, Computation and Complexity</title>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="https://www.shef.ac.uk/img/sheffield/favicon.ico" />
+<link rel="stylesheet" href="https://www.shef.ac.uk/css/sheffield/general.css" />
+<link rel="stylesheet" href="/css/local.css" />
+<!--[if lt IE 9]>
+<script src="https://www.shef.ac.uk/js/sheffield/html5.js"></script>
+<![endif]-->
+<script src="https://www.shef.ac.uk/js/sheffield/jquery/jquery-1.10.1.min.js"></script>
+<script src="https://www.shef.ac.uk/js/sheffield/sheffield.js"></script>
+<link rel="stylesheet" href="https://www.shef.ac.uk/cmlink/7.19964">
+</head>
+<body>
+<nav id="globalNavigation">
+<!-- global navigation links -->
+<ul>
+<li><a href="http://www.sheffield.ac.uk">University</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/faculty/engineering">Faculty</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/dcs">Department</a> |</li>
+<li><a href="http://www.dcs.shef.ac.uk/intranet/" accesskey="1" title="Access Key: 1">Intranet</a> |</li>
+<li><a href="http://www.sheffield.ac.uk/nap/panel/login" accesskey="m" title="Access Key: M">Log into MUSE</a> |</li>
+<li><a href="http://portal.shef.ac.uk/cp/ip/login?sys=generic&nbsp;url=null?cpip=webct">Log into MOLE</a></li>
+</ul>
+<!-- // global navigation links -->
+<!-- site search -->
+<form name="gs" method="get" action="http://google.shef.ac.uk/search" id="searchBox">
+	<fieldset>
+		<label for="searchterms">Search for</label>
+		<input type="search" name="q" size="20" maxlength="100" value=" your search" id="searchterms" onfocus="value=''" />
+		<input type="submit" name="btnG" value="Search" class="submit" />
+		<input type="hidden" name="sort" value="date:D:L:d1" />
+		<input type="hidden" name="output" value="xml_no_dtd" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="oe" value="UTF-8" />
+		<input type="hidden" name="client" value="default_frontend" />
+		<input type="hidden" name="proxystylesheet" value="default_frontend" />
+		<input type="hidden" name="site" value="default_collection" />
+	</fieldset>
+</form>   
+<!-- // site search --></nav><!-- header -->
+<header>
+	<table>
+		<tr>
+			<td id="headerLeft">
+				<div id="headerCrest">
+					<a href="http://www.sheffield.ac.uk" title="The University of Sheffield homepage" accesskey="1"><img src="https://www.shef.ac.uk/img/sheffield/crest-l.gif" alt="The University of Sheffield" /></a>
+				</div>
+			</td>
+			<td id="headerRight">
+				<div id="headerTitle">
+					<span id="pageTitle">Department of Computer Science</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</header>
+<!-- // header -->
+<!-- breadcrumbs -->
+<!-- nav id="breadcrumbs"> You are here:
+    <ol>
+                            <li>
+                <a href="/">
+                                	Home</a>
+                                 /             </li>
+                    <li>
+                <a href="/dcs">
+                                	Computer Science</a>
+                                            </li>
+                    </ol></nav -->
+<!-- // breadcrumbs --><!-- local navigation -->
+<nav id="localNavigation">
+<!-- ul><li>&nbsp;</li></ul -->
+<p>&nbsp;</p>
+</nav>
+<!-- // local navigation -->
+ 		<!-- Local Content -->
+		<table id="contentContainer" summary="content layout table" cellpadding="0" cellspacing="0" border="0">
+ 		<tr>
+   			<td id="bodyContainer">
+				<!-- content start -->
+				<a name="content"></a>
+				<h2>COM2109 Automata, Computation and Complexity</h2>
+    <table width="100%" cellspacing="2" cellpadding="2" align="center">
+      <tbody>
+        <tr>
+          <th>Summary</th>
+          <td>
+            <p>This module introduces the theoretical foundations for
+              computing systems: finite state machines, pushdown
+              automata, and Turing machines, along with the formal
+              languages that can be recognised by these machine models.
+            </p>
+            <p> It also deals with the question "What is computable?"
+              and "What is efficiently computable?" by showing when
+              problems are computationally hard, and how to find
+              algorithmic solutions to computationally hard problems.</p>
+          </td>
+        </tr>
+        <tr>
+          <th>Session</th>
+          <td>Academic Year 2018/19</td>
+        </tr>
+        <tr>
+          <th>Credits</th>
+          <td>20 </td>
+        </tr>
+        <tr>
+          <th>Assessment</th>
+          <td>
+            <p> Attainment of the learning outcomes is assessed through
+              two exams, that is, one towards the end of each semester.
+              The first exam will assess objectives 1 and 4, the second
+              one will assess objectives 2-4. </p>
+          </td>
+        </tr>
+        <tr>
+          <th>Lecturer(s)</th>
+          <td> Dr Kirill Bogdanov (Autumn) &amp; Dr Mike Stannett, Dr
+            Pan Peng, Dr Sebastian Ordyniak (Spring) </td>
+        </tr>
+        <tr>
+          <th>Resources</th>
+          <td>
+            <ul>
+              <li><a href="https://vle.shef.ac.uk">MOLE</a></li>
+              <li><a
+href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/practicalmarks/com2001.pdf">
+                  Unconfirmed practical marks when available</a></li>
+              <li><a
+href="https://www.dcs.shef.ac.uk/intranet/teaching/campus/pastpapers.html">
+                  Exam Papers, past 2 years (where applicable) </a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Aims</th>
+          <td>
+            <p>This unit aims to:</p>
+            <ol>
+              <li> Introduce machine models (i.e. models of computation)
+                and the corresponding notions of formal languages; </li>
+              <li>Introduce complexity theory and algorithmic solutions
+                to computationally hard problems; </li>
+              <li>Enhance analytical and logical skills in reasoning
+                abstractly (about computation and complexity); </li>
+              <li>Teach the foundations of theoretical computer
+                science, providing a thorough grounding for theoretical
+                courses at more advanced levels. </li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th>Objectives</th>
+          <td>
+            <p>By the end of the unit, a candidate will be able to:</p>
+            <ol>
+              <li> Use different machine models and the formal languages
+                they are able to recognise as well as be able to reason about the computational limitations of different machines (aims 1 and 3);</li>
+              <li> Show that a problem is computationally easy or hard
+                (aims 2 and 3); </li>
+              <li>Provide algorithmic solutions for computationally hard
+                problems (aims 2 and 3); </li>
+              <li>Explain the foundations of automata and language
+                theory, computability, and complexity (aims 1-4). </li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th>Content</th>
+          <td>
+            <p>Automata Theory (Semester 1) </p>
+            <ul>
+              <li>finite automata and regular languages </li>
+              <li>pushdown automata and context free languages </li>
+              <li>Turing machines and decidability </li>
+            </ul>
+            <p>Computational complexity: P and NP (Semester 2) </p>
+            <ul>
+              <li>Reductions and Rice's Theorem </li>
+              <li>P vs. NP, NP-completeness </li>
+              <li> Cook's theorem </li>
+              <li>Techniques for proving NP-hardness</li>
+            </ul>
+            <p> How to deal with NP-hard problems: </p>
+            <ul>
+              <li>Parameterized algorithms</li>
+            </ul>
+            <p> Approximation Algorithms: </p>
+            <ul>
+              <li>Examples for approximation algorithms </li>
+              <li>Polynomial-time approximation schemes </li>
+              <li>Hardness results for approximation <br>
+              </li>
+            </ul>
+            <p> Randomization: </p>
+            <ul>
+              <li>Examples for randomized algorithms </li>
+              <li>Probabilistic complexity classes </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Teaching Method</th>
+          <td>
+            <p> The theoretical background and techniques will be
+              presented in a series of formal lectures, 2 lectures per
+              week. Students will reinforce the material through
+              self-study, and through weekly problems classes where
+              students will apply analytical skills obtained in class.
+              Both lectures and problem classes are designed to achieve
+              objectives 1-4. </p>
+          </td>
+        </tr>
+        <tr>
+          <th>Feedback</th>
+          <td>Feedback on tutorial exercises.</td>
+        </tr>
+        <tr>
+          <th>Recommended Reading</th>
+          <td>
+            <ul>
+              <li>Dexter C. Kozen "Automata and Computability" Springer,
+                1997</li>
+              <li>B. Barak and S. Arora &ldquo;Computational Complexity: A Modern Approach&rdquo;</li>
+              <li>Cygan et al. &quot;Parameterized Algorithms&quot;,  (ISBN 978-3-319-21275-3)</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- footer -->
+               	<!-- content end -->
+			</td>
+		</tr>
+		</table>
+		<!-- // Local Content -->
+<!-- Footer -->
+<div id="footer">
+	<div id="footerLeft">
+	  <ul>
+	  <li>&nbsp;  Last modified: Fri Jan 18 10:48:31 2019.</li>
+	  </ul>
+	</div>
+	<div id="footerRight">
+	  <a href="mailto:com-webcontent@sheffield.ac.uk" accesskey="9" title="Access Key: 9">Report an Error</a>
+	</div>
+</div>
+<!-- // Footer -->
+
+</body>
+</html>
