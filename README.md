@@ -1,5 +1,15 @@
 # DCSData
 
+# Table of Contents
+
+1. [Summary](#summary)
+2. [User Installation](#user-installation)
+3. [Developer Environment Setup](#developer-environment-setup)
+4. [Data Scrapers](#data-scrapers)
+5. [FAQ Search](#faq-search)
+
+
+
 ## Summary
 
 Data is beautiful. Studying Computer Science at the University of Sheffield is beautiful. It only made sense to combine the two. 
